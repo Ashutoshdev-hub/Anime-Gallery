@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+      <h1> Anime Gallery</h1>
+      <p>Explore my collection of high-quality images ranging from Best Manga</p>
+    </header>
+    <nav>
+      <button class="filter" onclick="filterGallery('all')">All</button>
+      <button class="filter" onclick="filterGallery('anime')">Manga</button>
+      <button class="filter" onclick="filterGallery('movie')">Best Manga</button>
+      <!-- Add more filters as needed -->
+    </nav>
+  <section id="gallery">
+      <div class="photo">
+          <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/11/thorfinn-i-have-no-enemies.jpg" alt="one piecs">
+          <p class="caption">Vinland saga</p>
+      </div>
+      <div class="photo">
+          <img src="https://i.redd.it/the-best-panels-in-one-punch-man-v0-xb4ssv4i1f591.png?width=873&format=png&auto=webp&s=bedd73fb0d340fbd5a88fbf65839de5636277bf4" alt="">
+          <p class="caption">One Puch Man</p>
+      </div>
+      <div class="photo movie">
+          <img src="https://preview.redd.it/some-of-my-favorite-panels-v0-bpvg4vga8pda1.jpg?width=640&crop=smart&auto=webp&s=8d7d860d42652b8f32076b5fa8e823f502e84ea3" alt="">
+          <p class="caption">Vagabond</p>
+      </div>
+      <div class="photo anime">
+          <img src="https://i.pinimg.com/736x/ff/7b/c6/ff7bc6bb7d771b48346f58abf4674805.jpg"alt="">
+          <p class="caption">Berserk </p>
+      </div>
+      <div class="photo anime">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53LFfIuvgWCB253T-kNonExCwRS39YN-Y-Q&s" alt="">
+          <p class="caption">Innocent Zero</p>
+      </div>
+      <div class="photo anime">
+          <img src="https://preview.redd.it/favorite-mashle-manga-panel-here-mine-spoiler-v0-vquqinzsoiid1.jpeg?width=784&format=pjpg&auto=webp&s=bdec0963ec9393757c2f97add2195ac79c0ecf22" alt="">
+          <p class="caption">Tokyo Ghoul</p>
+      </div>
+      <div class="photo movie">
+          <img src="https://i.pinimg.com/236x/4a/94/e5/4a94e56c3e0c6867f16ac50c0c05f7dc.jpg" alt="">
+          <p class="caption">Berserk</p>
+      </div>
+      <div class="photo movie">
+          <img src="https://i.redd.it/6j5ood7o8c081.jpg" alt="">
+          <p class="caption">Sun-Ken Rock</p>
+      </div>
+      
+  </section>
+  <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+  </div>  
+</body>
+</html>
